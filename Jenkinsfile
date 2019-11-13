@@ -18,11 +18,12 @@ pipeline {
        //   sh 'jx step create version pr -k charts -n eswarachodisetti_pkstest1_master-1.0.0.tgz'
         //    sh 'jx step helm install -n eswarachodisetti_pkstest1_master helm'
             //sh 'jx step helm init'
+           //  sh 'jx step helm install --name poc env'
                sh 'jx step helm apply --name env'
-     sh 'jx step helm install --name poc env'
+           sh 'jx step helm install env'
         //  sleep 120
         //  print "Workspace: ${WORKSPACE}"
-           sh 'jx step helm apply --name env'
+        //   sh 'jx step helm apply --name env'
        }
         }
 

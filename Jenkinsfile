@@ -20,7 +20,7 @@ pipeline {
             //sh 'jx step helm init'
            //  sh 'jx step helm install --name poc env'
                sh 'jx step helm apply --name env'
-           sh 'jx step helm install env'
+           sh 'jx step helm install poc env'
         //  sleep 120
         //  print "Workspace: ${WORKSPACE}"
         //   sh 'jx step helm apply --name env'

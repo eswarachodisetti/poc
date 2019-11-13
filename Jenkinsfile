@@ -16,7 +16,7 @@ pipeline {
 
                sh 'jx step helm apply --name poclistener'
        //  sleep 120
-           sh 'jx step helm install --name=poc poclistener'
+           sh 'jx step helm install --name=poclistener poclistener'
         //       sh 'jx step helm apply'
         
        

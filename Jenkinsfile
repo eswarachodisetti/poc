@@ -12,6 +12,7 @@ pipeline {
     stage('Validate Environment') {
       steps {
         container('jx-base') {
+          dir('env') {
       //   sh 'jx step helm release eswarachodisetti_pkstest1_master'
 //             sh 'jx step helm package eswarachodisetti_pkstest1_master'
        //   sh 'jx step create version pr -k charts -n eswarachodisetti_pkstest1_master-1.0.0.tgz'
@@ -21,7 +22,7 @@ pipeline {
           print "Workspace: ${WORKSPACE}"
             sh 'jx step helm apply --name eswarachodisetti-poc-master'
        }
-
+        }
 
       }
     }

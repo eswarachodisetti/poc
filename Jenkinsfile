@@ -14,9 +14,9 @@ pipeline {
         container('jx-base') {
           dir('poclistener') {
 
-               sh 'jx step helm apply --name storage.googleapis.com/env'
+               sh 'jx step helm apply --name storage.googleapis.com/poclistener'
        //  sleep 120
-           sh 'jx step helm install --name=poc storage.googleapis.com/env'
+           sh 'jx step helm install --name=poc storage.googleapis.com/poclistener'
         
        
        }

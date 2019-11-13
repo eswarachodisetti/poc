@@ -18,7 +18,7 @@ pipeline {
         //    sh 'jx step helm install -n eswarachodisetti_pkstest1_master helm'
    //  sh 'jx step helm install --name poc poc'
           sleep 120
-            sh 'jx step helm apply'
+            sh 'jx step helm apply --name eswarachodisetti-poc-master'
        }
 
 

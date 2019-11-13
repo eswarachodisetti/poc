@@ -12,7 +12,7 @@ pipeline {
     stage('Validate Environment') {
       steps {
         container('jx-base') {
-          dir('env') {
+          dir('poclistener') {
 
                sh 'jx step helm apply --name env'
        //  sleep 120

@@ -16,7 +16,7 @@ pipeline {
 
                sh 'jx step helm apply --name env'
          sleep 120
-           sh 'jx step helm install --name=poc ./env'
+           sh 'jx step helm install --name=poc storage.googleapis.com/env'
         
        
        }

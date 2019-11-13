@@ -20,7 +20,7 @@ pipeline {
    //  sh 'jx step helm install --name poc poc'
         //  sleep 120
           print "Workspace: ${WORKSPACE}"
-            sh 'jx step helm apply --name eswarachodisetti-poc-master'
+            sh 'jx step helm apply --name env'
        }
         }
 

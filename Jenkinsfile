@@ -32,9 +32,10 @@ pipeline {
 				docker.withRegistry( '', dockerhub ) {
 				docker push dhanapodigiri/poclistener:2.0
 				}
-				"""			
-				}
+				"""	
 			*/
+				}
+			
 			}
 		}
 	}

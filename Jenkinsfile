@@ -28,12 +28,8 @@ pipeline {
 			script {
 				container('jx-base') {
 				//sh 'docker images'
-				sh '
-				docker.withRegistry( '', dockerhub ) {
-				docker push dhanapodigiri/poclistener:2.0
-				}
-				'	
-			
+				//sh 'docker push dhanapodigiri/poclistener:2.0'	
+			sh "docker push docker.io/dhanapodigiri/poclistener:2.0"
 				}
 			
 			}

@@ -9,16 +9,37 @@ pipeline {
     DEPLOY_NAMESPACE = "jx-staging"
   }
   stages {
-     stage('Build') {
+  
+  
+ /*    stage('Build') {
       steps {
         container('jx-base') {
-       //   sh 'docker build -t dhanapodigiri/poclistener:2.0 .'
-	//	  sh 'docker images'
-	sh 'docker push dhanapodigiri/poclistener:2.0'
+          sh 'docker build -t dhanapodigiri/poclistener:2.0 .'
+		  sh 'docker images'
+	
         }
 
       }
     }
+*/
+	  
+    stage('Push') {
+		steps{
+			script {
+				container('jx-base') {
+				sh """
+				docker.withRegistry( '', dockerhub ) {
+				docker push dhanapodigiri/poclistener:2.0
+				}
+				"""			
+				}
+			}
+		}
+	}
+	     
+	     
+	  
+	  
  /* 
  stage('Validate Environment') {
       steps {

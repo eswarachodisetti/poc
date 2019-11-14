@@ -12,8 +12,9 @@ pipeline {
      stage('Build') {
       steps {
         container('jx-base') {
-          sh 'docker build -t dhanapodigiri/poclistener:2.0 .'
-		  sh 'docker images'
+       //   sh 'docker build -t dhanapodigiri/poclistener:2.0 .'
+	//	  sh 'docker images'
+	sh 'docker push dhanapodigiri/poclistener:2.0'
         }
 
       }

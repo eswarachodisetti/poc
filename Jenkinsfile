@@ -27,7 +27,7 @@ pipeline {
 		steps{
 			script {
 				container('jx-base') {
-				sh 'docker images'
+				//sh 'docker images'
 				sh '
 				docker.withRegistry( '', dockerhub ) {
 				docker push dhanapodigiri/poclistener:2.0

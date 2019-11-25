@@ -33,8 +33,8 @@ pipeline {
 				//	sh 'chown -R "root":"root" /home/jenkins/.docker/*.*'
 				//	sh 'chmod -R g+rwx "/home/jenkins/.docker/*.*"'
 				//	sh 'echo "dhana1234" | docker login --username dhanapodigiri --password-stdin'
-				sh 'docker push dhanapodigiri/poclistener:2.0'	
-		//	sh "docker push dhanapodigiri/poclistener:1.0"
+				sh 'docker push dhanapodigiri/poclistener:2.0 --username dhanapodigiri --password=dhana1234'	
+		//	sh "docker push dhanapodigiri/poclistener:1.0 --username dhanapodigiri --password=dhana1234"
 				}
 			
 			}

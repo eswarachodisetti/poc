@@ -27,9 +27,9 @@ pipeline {
 		steps{
 			script {
 				container('jx-base') {
-				//sh 'docker images'
+				sh 'docker images'
 				//sh 'docker push dhanapodigiri/poclistener:2.0'	
-			sh "docker push dhanapodigiri/poclistener:1.0"
+		//	sh "docker push dhanapodigiri/poclistener:1.0"
 				}
 			
 			}

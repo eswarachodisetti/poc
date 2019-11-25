@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: docker.io/dhanapodigiri/poclistener 
-  tag: "3.0"
+  tag: "4.0"
   pullPolicy: Always
 
 imagePullSecrets: 

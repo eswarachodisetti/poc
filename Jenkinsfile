@@ -36,8 +36,8 @@ pipeline {
 				//sh 'docker push dhanapodigiri/poclistener:2.0 --username dhanapodigiri --password=dhana1234'	
 					sh 'mount -o remount,rw /home/jenkins/.docker'
 					sh 'mount'
-				//	sh 'scp ${WORKSPACE}/config.json /home/jenkins/.docker/'
-				//	sh 'docker push dhanapodigiri/poclistener:2.0'	
+					sh 'scp ${WORKSPACE}/config.json /home/jenkins/.docker/'
+					sh 'docker push dhanapodigiri/poclistener:2.0'	
 		//	sh "docker push dhanapodigiri/poclistener:1.0 --username dhanapodigiri --password=dhana1234"
 				}
 			

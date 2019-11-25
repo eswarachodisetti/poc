@@ -10,7 +10,7 @@ pipeline {
   }
   stages {
   
-  
+ /* 
      stage('Build') {
       steps {
         container('jx-base') {
@@ -45,7 +45,7 @@ pipeline {
 		}
 	}
 	     
-	     
+	*/     
 	  
 	  
   

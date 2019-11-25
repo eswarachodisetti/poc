@@ -29,7 +29,7 @@ pipeline {
 				container('jx-base') {
 				//sh 'docker images'
 					sh 'whoami'
-					sh 'cd /home/jenkins && ls -lart'
+					sh 'cd /home/jenkins/docker && ls -lart'
 				//	sh 'sudo chown "root":"root" /home/"root"/.docker -R'
 				//	sh 'sudo chmod g+rwx "/home/root/.docker" -R'
 				//	sh 'echo "dhana1234" | docker login --username dhanapodigiri --password-stdin'

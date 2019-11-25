@@ -28,6 +28,9 @@ pipeline {
 			script {
 				container('jx-base') {
 				//sh 'docker images'
+					sh 'whoami'
+					sh 'sudo chown "root":"root" /home/"root"/.docker -R'
+					sh 'sudo chmod g+rwx "/home/root/.docker" -R'
 					sh 'echo "dhana1234" | docker login --username dhanapodigiri --password-stdin'
 				//sh 'docker push dhanapodigiri/poclistener:2.0'	
 		//	sh "docker push dhanapodigiri/poclistener:1.0"

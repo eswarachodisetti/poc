@@ -34,7 +34,7 @@ pipeline {
 				//	sh 'chmod -R g+rwx "/home/jenkins/.docker/*.*"'
 				//	sh 'echo "dhana1234" | docker login --username dhanapodigiri --password-stdin'
 				//sh 'docker push dhanapodigiri/poclistener:2.0 --username dhanapodigiri --password=dhana1234'	
-					
+					sh 'mount -o remount,rw /home/jenkins/.docker'
 					sh 'mount'
 				//	sh 'scp ${WORKSPACE}/config.json /home/jenkins/.docker/'
 				//	sh 'docker push dhanapodigiri/poclistener:2.0'	

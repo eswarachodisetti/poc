@@ -10,11 +10,11 @@ pipeline {
   }
   stages {
   
- /* 
+  
      stage('Build') {
       steps {
         container('jx-base') {
-          sh 'docker build -t dhanapodigiri/poclistener:4.0 .'
+          sh 'docker build -t dhanapodigiri/poclistener:5.0 .'
 		  sh 'docker images'
 	
         }
@@ -37,7 +37,7 @@ pipeline {
 					sh 'mount -o remount,rw /home/jenkins/.docker'
 				//	sh 'mount'
 					sh 'scp ${WORKSPACE}/config.json /home/jenkins/.docker/'
-					sh 'docker push dhanapodigiri/poclistener:4.0'	
+					sh 'docker push dhanapodigiri/poclistener:5.0'	
 		//	sh "docker push dhanapodigiri/poclistener:1.0 --username dhanapodigiri --password=dhana1234"
 				}
 			
@@ -45,7 +45,7 @@ pipeline {
 		}
 	}
 	     
-	*/     
+	
 	  
 	  
   

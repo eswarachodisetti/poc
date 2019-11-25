@@ -28,7 +28,7 @@ pipeline {
 			script {
 				container('jx-base') {
 				//sh 'docker images'
-					sh 'docker login -u dhanapodigiri -p dhana1234'
+					sh 'echo "dhana1234" | docker login --username dhanapodigiri --password-stdin'
 				//sh 'docker push dhanapodigiri/poclistener:2.0'	
 		//	sh "docker push dhanapodigiri/poclistener:1.0"
 				}

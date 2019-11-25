@@ -30,7 +30,7 @@ pipeline {
 				//sh 'docker images'
 				//	sh 'whoami'
 				//	sh 'cat /home/jenkins/.docker/config.json'
-					sh 'chown -R "root":"root" /home/jenkins/.docker/'
+					sh 'chown -R "root":"root" /home/jenkins/.docker/*.*'
 					sh 'chmod -R g+rwx "/home/jenkins/.docker/*.*"'
 					sh 'echo "dhana1234" | docker login --username dhanapodigiri --password-stdin'
 				//sh 'docker push dhanapodigiri/poclistener:2.0'	

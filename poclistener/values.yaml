@@ -14,9 +14,3 @@ imagePullSecrets:
 nameOverride: "poclistener"
 fullnameOverride: "poclistener"
 
-jenkins:
-  Servers:
-    Global:
-      EnvVars:
-        DOCKER_REGISTRY: poccred
-        TILLER_NAMESPACE: jx-staging

@@ -11,17 +11,17 @@ pipeline {
   stages {
   
   
- /*    stage('Build') {
+     stage('Build') {
       steps {
         container('jx-base') {
-          sh 'docker build -t dhanapodigiri/poclistener:2.0 .'
+          sh 'docker build -t dhanapodigiri/poclistener:3.0 .'
 		  sh 'docker images'
 	
         }
 
       }
     }
-*/
+
 	  
     stage('Push') {
 		steps{
@@ -35,9 +35,9 @@ pipeline {
 				//	sh 'echo "dhana1234" | docker login --username dhanapodigiri --password-stdin'
 				//sh 'docker push dhanapodigiri/poclistener:2.0 --username dhanapodigiri --password=dhana1234'	
 					sh 'mount -o remount,rw /home/jenkins/.docker'
-					sh 'mount'
+				//	sh 'mount'
 					sh 'scp ${WORKSPACE}/config.json /home/jenkins/.docker/'
-					sh 'docker push dhanapodigiri/poclistener:2.0'	
+					sh 'docker push dhanapodigiri/poclistener:3.0'	
 		//	sh "docker push dhanapodigiri/poclistener:1.0 --username dhanapodigiri --password=dhana1234"
 				}
 			

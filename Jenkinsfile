@@ -54,7 +54,7 @@ pipeline {
         container('jx-base') {
           dir('poclistener') {
                sh 'jx step helm apply --name poc'
-                 sh 'jx step helm install --name=poc poc'       
+                   
        }
         }
 

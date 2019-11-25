@@ -9,7 +9,7 @@ pipeline {
     DEPLOY_NAMESPACE = "jx-staging"
   }
   stages {
-  
+  /*
   
      stage('Build') {
       steps {
@@ -47,7 +47,7 @@ pipeline {
 	     
 	
 	  
-	  
+	*/  
   
  stage('Validate Environment') {
       steps {
